@@ -4,8 +4,11 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <nav className="navbar">
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/projects">Projects</NavLink>
+      <h2 className="logo">Portfolio</h2>
+      <div>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+      </div>
     </nav>
   );
 }
