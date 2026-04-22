@@ -1,40 +1,63 @@
 import "./Home.css";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div className="home-container">
-      <div className="home-card">
-        <h1 className="title">Sai Kamal Koushik</h1>
-        <p className="subtitle">AI & Web Developer</p>
+    <div className="main">
 
-        <section>
-          <h2>About Me</h2>
-          <p>
-            I am passionate about Artificial Intelligence and Web Development,
-            focused on building real-world impactful applications.
-          </p>
-        </section>
+      {/* HERO */}
+      <motion.section 
+        className="hero"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <h1>Kamal Koushik</h1>
+        <p>AI & Web Developer</p>
+      </motion.section>
 
-        <section>
-          <h2>Research Interests</h2>
-          <p>Machine Learning • Artificial Intelligence • Data Science</p>
-        </section>
+      {/* ABOUT */}
+      <motion.section 
+        className="section"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h2>About Me</h2>
+        <p>
+          Passionate about AI and Web Development. I build modern applications
+          with clean UI and powerful backend logic.
+        </p>
+      </motion.section>
 
-        <section>
-          <h2>Personal Details</h2>
-          <p><strong>Phone:</strong> 7674083545</p>
-          <p><strong>Email:</strong> se23uari027@mahindrauniversity.edu.in</p>
-        </section>
+      {/* SKILLS */}
+      <motion.section 
+        className="section"
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h2>Skills</h2>
+        <div className="skills">
+          <span>React</span>
+          <span>Python</span>
+          <span>Java</span>
+          <span>Machine Learning</span>
+        </div>
+      </motion.section>
 
-        <section>
-          <h2>Skills</h2>
-          <div className="skills">
-            <span>React</span>
-            <span>Python</span>
-            <span>Java</span>
-          </div>
-        </section>
-      </div>
+      {/* CONTACT */}
+      <motion.section 
+        className="section"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+        <p>Phone: 1234567890</p>
+      </motion.section>
+
     </div>
   );
 }

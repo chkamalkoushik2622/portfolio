@@ -1,71 +1,57 @@
-/* Background */
-.home-container {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
 }
 
-/* Card */
-.home-card {
-  background: white;
+/* Container */
+.main {
+  max-width: 900px;
+  margin: auto;
   padding: 40px;
-  border-radius: 20px;
-  width: 600px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* HERO */
+.hero {
   text-align: center;
-  animation: fadeIn 1s ease-in;
+  margin-bottom: 60px;
 }
 
-/* Title */
-.title {
-  font-size: 32px;
-  margin-bottom: 5px;
-  color: #222;
+.hero h1 {
+  font-size: 50px;
+  color: #38bdf8;
 }
 
-.subtitle {
-  color: #666;
-  margin-bottom: 20px;
+.hero p {
+  color: #94a3b8;
 }
 
-/* Sections */
-section {
-  margin-top: 25px;
+/* SECTION */
+.section {
+  margin-bottom: 50px;
 }
 
-h2 {
-  color: #333;
-  margin-bottom: 10px;
+/* Heading */
+.section h2 {
+  border-left: 4px solid #38bdf8;
+  padding-left: 10px;
+  margin-bottom: 15px;
 }
 
 /* Skills */
 .skills span {
   display: inline-block;
-  background: #4facfe;
-  color: white;
-  padding: 8px 14px;
+  background: #1e293b;
+  padding: 10px 15px;
   margin: 6px;
-  border-radius: 20px;
-  font-size: 14px;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
+/* Hover animation */
 .skills span:hover {
-  background: #00c6ff;
-  transform: scale(1.1);
-}
-
-/* Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  background: #38bdf8;
+  color: black;
+  transform: translateY(-5px) scale(1.1);
 }
