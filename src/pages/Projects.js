@@ -1,13 +1,21 @@
+import "./Projects.css";
+
 function Projects() {
   return (
-    <div>
+    <div className="projects-container">
       <h1>My Projects</h1>
 
-      <h3>Project 1</h3>
-      <a href="https://github.com/your-username/project1">GitHub Link</a>
+      <div className="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Built using React and deployed on GitHub Pages</p>
+        <a href="https://github.com/chkamalkoushik2622/portfolio">View Code</a>
+      </div>
 
-      <h3>Project 2</h3>
-      <a href="https://github.com/your-username/project2">GitHub Link</a>
+      <div className="project-card">
+        <h3>Student Prediction System</h3>
+        <p>Machine learning model to predict student performance</p>
+        <a href="https://github.com/chkamalkoushik2622/project2">View Code</a>
+      </div>
     </div>
   );
 }

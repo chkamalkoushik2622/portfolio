@@ -1,23 +1,36 @@
+import "./Home.css";
+<img src="/profile.jpg" alt="profile" className="profile" />
+
 function Home() {
   return (
-    <div>
-      <h1>My Portfolio</h1>
+    <div className="container">
+      <div className="card">
+        <h1>My Portfolio</h1>
 
-      <h2>About Me</h2>
-      <p>I am a student passionate about AI and Web Development.</p>
+        <img src="/profile.jpg" alt="profile" className="profile" />
 
-      <h2>Research Interests</h2>
-      <p>Machine Learning, AI, Data Science</p>
+        <h2>About Me</h2>
+        <p>
+          I am a student passionate about AI, Web Development and building real-world applications.
+        </p>
 
-      <h2>Personal Details</h2>
-      <p>Name: Sai Kamal Koushik</p>
-      <p>Phone: 7674083545</p>
-      <p>Email: ch.kamalkoushik@gmail.com</p>
+        <h2>Research Interests</h2>
+        <p>Machine Learning, Artificial Intelligence, Data Science</p>
 
-      <h2>Skills</h2>
-      <p>React, Python, Java</p>
+        <h2>Personal Details</h2>
+        <ul>
+          <li>Name: Kamal Koushik</li>
+          <li>Phone: 1234567890</li>
+          <li>Email: your@email.com</li>
+        </ul>
 
-      <img src="https://via.placeholder.com/150" alt="profile" />
+        <h2>Skills</h2>
+        <div className="skills">
+          <span>React</span>
+          <span>Python</span>
+          <span>Java</span>
+        </div>
+      </div>
     </div>
   );
 }
