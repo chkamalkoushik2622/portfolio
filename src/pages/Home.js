@@ -10,9 +10,9 @@ function Home() {
       <p>Machine Learning, AI, Data Science</p>
 
       <h2>Personal Details</h2>
-      <p>Name: Your Name</p>
-      <p>Phone: 1234567890</p>
-      <p>Email: your@gmail.com</p>
+      <p>Name: Sai Kamal Koushik</p>
+      <p>Phone: 7674083545</p>
+      <p>Email: ch.kamalkoushik@gmail.com</p>
 
       <h2>Skills</h2>
       <p>React, Python, Java</p>
